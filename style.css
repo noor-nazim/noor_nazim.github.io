@@ -1,0 +1,87 @@
+/* style.css */
+
+/* Set the height of the navbar */
+.navbar {
+    min-height: 80px;
+}
+
+/* Set padding for sections */
+section {
+    padding: 60px 0;
+}
+
+/* Set background color for even sections */
+section:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Style header */
+header {
+    background-image: url('dark.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Font styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+/* Color palette */
+:root {
+    --primary-color: #333;
+    --secondary-color: #666;
+    --accent-color: #007bff;
+}
+
+.primary-text {
+    color: var(--primary-color); /* Text color */
+}
+
+.secondary-text {
+    color: var(--secondary-color); /* Secondary text color */
+}
+
+/* Spacing */
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    header {
+        height: 300px;
+    }
+}
+
+/* Animations and Transitions */
+button {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555; /* Darken background color on hover */
+}
+
+/* Accessibility */
+a {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: 2px solid #fff; /* White outline on focus */
+}
